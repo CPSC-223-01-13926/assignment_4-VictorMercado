@@ -30,19 +30,26 @@
 1. Create a `weather` module.
      1. Create a function named `read_data` which receives a keyword parameter `filename`.
           1. The function should open the filename in read mode and return a dictionary of the JSON decoded contents of the file.
-          2. If the file does not exist, the function should accept the FileNotFoundError and return an empty dictionary.  
+          2. If the file does not exist, the function should accept the FileNotFoundError and return an empty dictionary.
+
      1. Create a function named `write_data` which receives a keyword parameter `data` and `filename`
-          1. The function should open the filename in write mode and write the dictionary data into the file encoded as JSON.  
+          1. The function should open the filename in write mode and write the dictionary data into the file encoded as JSON.
+
      1. Create a function named `max_temperature` which receives a keyword parameter `data` and `date`
           1. The function should return the maximum temperature for all dictionary data where the key contains the date as YYYYMMDD.
+		  
      1. Create a function named `min_temperature` which receives a keyword parameter `data` and `date`
           1. The function should return the minimum temperature for all dictionary data where the key contains the date as YYYYMMDD.
+
      1. Create a function named `max_humidity` which receives a keyword parameter `data` and `date`
           1. The function should return the maximum humidity for all dictionary data where the key contains the date as YYYYMMDD.
+
      1. Create a function named `min_humidity` which receives a keyword parameter `data` and `date`
           1. The function should return the minimum humidity for all dictionary data where the key contains the date as YYYYMMDD.
+
      1. Create a function named `tot_rain` which receives a keyword parameter `data` and `date`
           1. The function should return the sum of rainfall for all dictionary data where the key contains the date as YYYYMMDD.
+
      1. Create a function named `report_daily` which receives a keyword parameter `data` and `date`
           1. The function should return a single string which when passed to any print function will display on the screen formatted exactly as indicated in the example output below.  You will most likely be appending strings together using a literal "\n" where a newline is desired.  To get the month name, you can import the builtin `calendar` module and call the `month_name` function passing it the month as an integer.
      1. Create a function named `report_historical` which receives a keyword parameter `data`
@@ -133,7 +140,7 @@
 	Enter menu choice: 4
 
 	============================== HISTORICAL REPORT ===========================
-				  Minimum      Maximum   Minumum   Maximum     Total
+				  			Minimum      Maximum   Minumum   Maximum     Total
 	Date                  Temperature  Temperature  Humidity  Humidity  Rainfall
 	====================  ===========  ===========  ========  ========  ======== 
 	February 3, 2021               55           72        69        87      0.00
